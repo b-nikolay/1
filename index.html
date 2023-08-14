@@ -91,7 +91,7 @@
                   <span class="main__card-subtitle">
                     Распложен в курортном Джемете в 20 минутах ходьбы от морского побережья
                   </span>
-                  <button class="main__card-button button">Забронировать номер</button>
+                  <button class="main__card-button button open-popup">Забронировать номер</button>
                 </div>
               </div>
               <div class="swiper-slide">
@@ -102,7 +102,7 @@
                   <span class="main__card-subtitle">
                     За 5—7 минут можно доехать до аквапарка, дельфинария, парка развлечений. Рядом много кафе, ресторанов, сувенирных лавок и магазинов. 
                   </span>
-                  <button class="main__card-button button">Забронировать номер</button>
+                  <button class="main__card-button button open-popup">Забронировать номер</button>
                 </div>
               </div>
               <div class="swiper-slide">
@@ -114,7 +114,7 @@
                     До железнодорожного вокзала - чуть больше 3 километров, дорога до аэропорта займет около 10 минут.
 
                   </span>
-                  <button class="main__card-button button">Забронировать номер</button>
+                  <button class="main__card-button button open-popup">Забронировать номер</button>
                 </div>
               </div>
             </div>
@@ -240,12 +240,12 @@
               <div class="numbers__item-card">
                 <img src="img/03/01.png" alt="" class="numbers__item-card-image">
                 <span class="numbers__item-card-title">Стандарт <span class="orange"> 2х местный</span></span>
-                <button class="numbers__item-card-button">Забронировать</button>
+                <button class="numbers__item-card-button open-popup">Забронировать</button>
               </div>
               <div class="numbers__item-card">
                 <img src="img/03/02.png" alt="" class="numbers__item-card-image">
                 <span class="numbers__item-card-title">Стандарт <span class="orange"> Семейный 3х местный</span></span>
-                <button class="numbers__item-card-button">Забронировать</button>
+                <button class="numbers__item-card-button  open-popup">Забронировать</button>
               </div>
             </div>
 
@@ -258,12 +258,12 @@
               <div class="numbers__item-card">
                 <img src="img/03/03.png" alt="" class="numbers__item-card-image">
                 <span class="numbers__item-card-title">Комфорт <span class="orange"> 2х местный</span></span>
-                <button class="numbers__item-card-button">Забронировать</button>
+                <button class="numbers__item-card-button open-popup">Забронировать</button>
               </div>
               <div class="numbers__item-card">
                 <img src="img/03/04.png" alt="" class="numbers__item-card-image">
                 <span class="numbers__item-card-title">Комфорт <span class="orange"> Семейный</span></span>
-                <button class="numbers__item-card-button">Забронировать</button>
+                <button class="numbers__item-card-button open-popup">Забронировать</button>
               </div>
             </div>
 
@@ -276,7 +276,7 @@
               <div class="numbers__item-card">
                 <img src="img/03/05.png" alt="" class="numbers__item-card-image">
                 <span class="numbers__item-card-title">Люкс <span class="orange">двухкомнатный</span></span>
-                <button class="numbers__item-card-button">Забронировать</button>
+                <button class="numbers__item-card-button open-popup">Забронировать</button>
               </div>
             </div>
 
@@ -323,6 +323,38 @@
       </div>
     </footer>
   </div>
+  <div class="popup__bg"> 
+    <form class="popup">
+        <img src="img/svg/close.svg" class="close-popup">
+        <label>
+            <input type="text" name="name">
+            <div class="label__text">
+                Ваше имя
+            </div>
+        </label>
+        <label>
+            <input type="tel" class="tel" name="tel">
+            <div class="label__text">
+                Ваш телефон
+            </div>
+        </label>
+        <label>
+            <input type="number" name="persons">
+            <div class="label__text">
+                Количество гостей
+            </div>
+        </label>
+        <label>
+          <input type="text" name="checkin" id="demo-12_1" class="calendar__item-subtitle form-control form-control-sm">
+          <input type="text" name="checkout" id="demo-12_2" class="calendar__item-subtitle form-control form-control-sm">
+            <div class="label__text">
+                Даты заезда и выезда
+            </div>
+        </label>
+        <span class="blue"></span>
+        <button type="submit">Отправить</button>
+    </form>
+</div>  
   <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
   <script src="js/main.js"></script>
