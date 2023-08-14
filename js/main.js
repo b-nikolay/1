@@ -1348,3 +1348,10 @@ var picker = new Lightpick({
       // document.getElementById('result-11').innerHTML = str;
   }
 });
+
+$(document).ready(function() {
+    $('.header__menu').click(function() {
+        $('.header__menu').toggleClass('open-menu');
+        $('.header__list').toggleClass('open-menu');
+    });
+});

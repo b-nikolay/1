@@ -50,24 +50,27 @@
 
         <div class="header__row">
           <img src="img/svg/logo.svg" alt="" class="header__logo">
+          <div class="header__menu">
+              <span></span>
+          </div>
           <ul class="header__list">
             <li class="header__item">
-              <a href="" class="header__link">О нас</a>
+              <a href="#" class="header__link">О нас</a>
             </li>
             <li class="header__item">
-              <a href="" class="header__link">Номера</a>
+              <a href="#" class="header__link">Номера</a>
             </li>
             <li class="header__item">
-              <a href="" class="header__link">Услуги</a>
+              <a href="#" class="header__link">Услуги</a>
             </li>
             <li class="header__item">
-              <a href="" class="header__link">Акции</a>
+              <a href="#" class="header__link">Акции</a>
             </li>
             <li class="header__item">
-              <a href="" class="header__link">Контакты</a>
+              <a href="#" class="header__link">Контакты</a>
             </li>
             <li class="header__item">
-              <a href="" class="header__link">Отзывы</a>
+              <a href="#" class="header__link">Отзывы</a>
             </li>
           </ul>
         </div>
@@ -327,12 +330,29 @@
       const swiper = new Swiper('.swiper', {
         // Optional parameters
         loop:true,
-  
+        
         // Navigation arrows
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
         },
+        breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 1,
+      spaceBetween: 30
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 40
+    }
+  }
 
       });
 
